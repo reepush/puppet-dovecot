@@ -13,7 +13,7 @@ passdb {
 }
 
 userdb {
-  driver = passwd-file
+  driver = static
   <% if @auth_passwdfile_userdb -%>
   args = <%= @auth_passwdfile_userdb %>
   <% else %>
